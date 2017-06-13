@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KyleLan's Portfolio</title>
+    <style>
+        
+    body {
+    	background-color: rgba( 255, 255, 255, 1);
+    	
+    }
+     
+    .menu {
+        width: 600px;
+    	margin: 0 auto;
+    	padding: 10px;
+    	background: hsla( 0, 0%, 100%, 1);
+        border: 0.5px solid #ccc;
+        border-radius: 10px;
+    }
+    
+
+    .menu h2 {
+    	margin: 5px 0;
+    	padding: 0;
+    	position: relative;
+    }
+
+    .menu h2:before {
+    	content:"";
+    	border: 10px solid #fff;
+    	border-color: transparent transparent transparent #fff ;
+    	height: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 0;
+    }
+
+    .menu h2 a {
+    	display: block;
+    	background: #88caf1;
+    	background: -webkit-linear-gradient( top, #234de6, #88caf1);
+    	background: -moz-linear-gradient( top, #234de6, #88caf1);
+    	background: -o-linear-gradient( top, #234de6, #88caf1);
+    	background: linear-gradient( top, #234de6, #88caf1);
+    	border-radius: 5px;
+    	color: #fff;
+    	padding: 10px;
+    	margin: 0px;
+    	font-size: 20px;
+    	font-family: sans-serif, Arial;
+    	text-decoration: none;
+    	text-shadow: 1px 1px 1px #eee;
+    }
+
+    .menu :target h2 a,
+    .menu h2 a:focus,
+    .menu h2 a:hover,
+    .menu h2 a:active {
+    	background: #05bb2d;
+    	background: -webkit-linear-gradient( top,  #414241, #d2d4d2);
+    	background: -moz-linear-gradient( top,  #414241, #d2d4d2);
+    	background: -o-linear-gradient( top,  #414241, #d2d4d2);
+    	background: linear-gradient( top,  #414241, #d2d4d2);	
+    }
+
+    .menu :target h2:before {
+    	border-color: #fff transparent transparent;
+    }
+
+    .menu ul, .menu p {
+    	margin: 0;
+    	height: 0;
+    	overflow: hidden;
+    	padding: 0 10px;
+    	-moz-transition: height 0.5s ease-in;
+    	-webkit-transition: height 0.5s ease-in;
+    	-o-transition: height 0.5s ease-in;
+    	transition: height 0.5s ease-in;
+    }
+   
+    .menu :target ul,
+    .menu :target p {
+    	height: 200px;
+    	overflow: auto;
+    }
+
+    li a {
+        text-decoration: none;
+        font-family: Arial;
+    } 
+
+    li a:hover {
+       font-weight: bold;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class = "menu">
+      <div class = "menuSection" id = "html-css">
+        <h2><a href = "#html-css">HTML/CSS&nbsp;Practice</a></h2>
+        <ul>
+          <li>CSS
+			<li><a href = "css/Newspaper/index.html">Newspaper's&nbsp;Layout</a></li>
+			<li><a href = "css/FilmPoster/index.html">Film&nbsp;Poster</a></li>
+          </li>
+          <li>Canvas
+              <li><a href = "Canvas/DigitClock/index.html">Digit&nbsp;Clock</a></li>
+          </li>
+        </ul>
+      </div>
+      <div class = "menuSection" id = "JavaScript">
+        <h2><a href = "#JavaScript">JavaScript&nbsp;Practice</a></h2>
+        <ul>
+          <li>Simple&nbsp;Game
+            <li><a href = "JavaScript/Gobang/index.html">Gobang</a></li>
+          </li>
+          <li>jQuery
+            <li><a href = "JavaScript/NoDelayList/index.html">No&nbsp;Delay&nbsp;List</a></li>
+           	<li><a href = "JavaScript/Resume/index.html">Personal&nbsp;Rusume</a></li>
+          </li>
+	  <li>AJAX
+            <li><a href = "JavaScript/Weather/index.html">Weather&nbsp;Query</a></li>
+	    <li><a href = "JavaScript/SearchBar/Bing/index.html">Bing&nbsp;Search&nbsp;Bar</a></li>
+          </li>
+      </div>
+      <div class = "menuSection" id = "Simple Demo">
+        <h2><a href = "#Simple Demo">Simple&nbsp;Demo</a></h2>
+        <ul>
+          <li>WeChat&nbsp;Mini&nbsp;Program
+            <li><a href = "#">Reader&nbsp;&amp;&nbsp;Movies</a></li>
+          </li>
+      </div>
+    </div>	
+</body>
+</html>

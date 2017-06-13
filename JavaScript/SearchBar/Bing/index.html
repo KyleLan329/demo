@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bing Search Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/dist/css/bootstrap.min.css" />
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "SimHei";
+	}	
+	
+	html,body {
+		height: 100%;
+		
+	}
+
+	.bg {
+		height: 100%;
+		background-image: url('images/bg1.jpg');
+		display: flex;
+		-webkit-display: flex;
+		-moz-display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.nav {
+		position: absolute;
+		top: 50%;
+		right: 0px;
+		transform: translate(0, -50%); 
+		display: flex;
+		flex-direction: column;
+	}
+
+
+	.main-body {
+		position: relative;
+	} 
+
+	.main-body img,
+	.main-body form {
+		float: left;
+	}
+	
+	.main-body img {
+		margin: 0 20px;
+
+	}
+
+	.main-body form {
+		background-color: #ffffff;
+		margin-top: 3px;
+	}
+	
+	.search-input-text,
+	.search-input-button {
+		border: 0;
+		float: left;
+	}
+
+	.search-input-text {
+		font-size: large;
+		height: 50px;
+		width: 250px;
+		padding-left: 5px;
+	}
+	
+	.search-input-button {
+		width: 50px;
+		height: 50px;
+		background-image: url('images/search.jpg');
+	}
+	
+	#search-suggest {
+		top: 53px;
+		left: 147px;
+		width: 250px;
+		background-color: #ffffff;
+		position: absolute;
+		border:  1px solid #999999;
+		display: none;
+	}
+
+	#search-suggest ul {
+		list-style: none;
+		margin-bottom: 0px;
+	}
+
+	#search-suggest ul li {
+		padding: 3px;
+		font-size: 14px;
+		line-height: 25px;
+		cursor: pointer;
+	}
+
+	#search-suggest ul li:hover {
+		text-decoration: underline;
+		background-color: #cccccc;
+		font-weight: bold;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="main-body">
+			<img src="images/logo.png" />
+			<form>
+				<input type="text" class="search-input-text" id="search-input"/>
+				<input type="submit" class="search-input-button" value="" />
+			</form>
+			<div class="suggest" id="search-suggest">
+				<ul id="search-result">
+					<li>搜索结果</li>
+					<li>搜索结果</li>
+				</ul>
+		</div>
+		</div>
+	</div>
+	<div class="nav">
+		<p><span class="glyphicon glyphicon-upload btn" style="font-size: 50px; color: #ffffff"></span></p>
+		<p><span class="glyphicon glyphicon-download btn" style="font-size: 50px; color: #ffffff"></span></p>			
+	</div>	
+	<script type="text/javascript" src="script/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script/searchBar.js"></script>
+	<script>
+		var btnUp = document.getElementsByClassName('glyphicon')[0];
+		var btnDown = document.getElementsByClassName('glyphicon')[1];
+		var bg = document.getElementsByClassName('bg')[0];
+		var index = 1;
+		var op = 0;
+		var timer;
+		
+		btnUp.onclick = function(){
+			if (index < 4) {
+				clearInterval(timer);
+				index++; 
+				bg.style.backgroundImage = "url('images/bg"+index+".jpg')";
+				timer = setInterval("FadeIn()",60);
+			} else {
+				clearInterval(timer);
+				index = 1;
+				bg.style.backgroundImage = "url('images/bg1.jpg')";
+				timer = setInterval("FadeIn()",60);
+			}
+		}
+
+		btnDown.onclick = function(){
+			if (index != 1 ) {
+				clearInterval(timer);
+				index--; 
+				bg.style.backgroundImage = "url('images/bg"+index+".jpg')";
+				timer = setInterval("FadeIn()",60);
+				console.log(timer);				
+			} else {
+				clearInterval(timer);
+				index = 4;
+				bg.style.backgroundImage = "url('images/bg4.jpg')";
+				timer = setInterval("FadeIn()",60);
+			}
+		}
+
+		function FadeIn() {			
+			if (op < 1) {
+				op += 0.05;
+				bg.style.opacity = op;
+			} else {
+				clearInterval(timer);
+				op = 0.1;				
+			}			
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web前端简历-兰坤</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: Arial,"Microsoft YaHei",sans-serif;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		#container,.sections,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+		#section0{
+			background-color: #62b0f3;
+			text-shadow:1px 1px 5px #333;
+		}
+		#section1{		
+			background-color: #2d95ef;
+		}
+		#section2{
+			background-color: #0768bd;		
+		}
+		#section3{
+			background-color: #033b6d;
+		}
+	
+
+		.left{
+			float: left;
+		}
+
+	
+		.pages{
+			position:fixed;
+			list-style: none;
+		}
+		.vertical.pages{
+			right: 10px;
+			top: 50%;
+		}
+		.horizontal.pages{
+			left: 50%;
+			bottom: 10px;
+		}
+		.pages li{
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: #fff;
+			margin: 10px 5px;
+			cursor: pointer;
+		}
+		.horizontal.pages li{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.pages li.active{
+			width: 14px;
+			height: 14px;
+			border: 2px solid #FFFE00;
+			background: none;
+			margin-left: 0;
+		}
+		
+		#section0 .info {
+			width: 900px;
+			height: 450px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			
+		}
+
+		#section0 .info img {
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			-webkit-transition: box-shadow 0.8s;
+		    -moz-transition: box-shadow 0.8s;
+		    transition: box-shadow 0.8s;
+
+		}
+
+		#section0 .info img:hover {
+			box-shadow: 0px 0px 5px 5px #ffffff ;          
+		}
+
+		#section0 .info  h1, 
+		#section0 .info  p {
+			text-align: center;
+			color: #ffffff;
+		}
+
+		#section0 .info  h1 {
+			color: #ffffff;
+			font-size: 50px;
+		}
+
+		#section0 .info  p {
+			font-size: 18px;
+			line-height: 30px;
+		}
+
+		.typing{
+			margin: 0 auto;
+			width: 280px;
+			text-align: center;
+			white-space:nowrap;
+			overflow:hidden;
+			-webkit-animation: type 3s steps(50, end) ;
+			animation: type 3s steps(50, end) ;
+		}
+
+
+		@-webkit-keyframes type{
+		    from { width: 0;}
+		}
+
+		@keyframes type{
+		    from { width: 0;}
+		}
+
+
+	
+
+
+	</style>
+</head>
+<body>
+	<div id="container" data-PageSwitch>
+		<div class="sections">
+			<div class="section active" id="section0">
+				<div class = "info">
+					<img src="images/pic.jpg" />
+					<h1 class="name">兰坤</h1>
+					<p class="personalTitile">成长中的Web前端工程师</p>
+					<p class="briefIntro typing">&nbsp;热爱生活，乐于求索</p>
+				</div>
+			</div>
+			<div class="section" id="section1">
+
+			</div>
+			<div class="section" id="section2">
+
+			</div>
+			<div class="section" id="section3">
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="script/pageswitch.js"></script>
+
+</body>
+</html>
