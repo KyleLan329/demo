@@ -1,0 +1,42 @@
+/* pages/weather/weather.wxss */
+
+.content {
+  font-family: 微软雅黑;
+  font-size: 14px;
+  background-size:cover;
+  height: 1334rpx;
+  width:100%;
+  background-image: url('http://omwkr388t.bkt.clouddn.com/wt-bg.jpg') ;
+  color:#fff;
+}
+
+.info{
+    padding:20px;
+    margin: 0 10rpx;
+    background:rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.today{
+    padding-top:50rpx;
+    height:50%;
+}
+
+.city{
+    color: white;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 10rpx;
+    margin-top: 10rpx;
+}
+
+.temp {
+    font-size: 50px;
+    text-align: center;
+}
+
+.weather{
+    text-align: center;
+}

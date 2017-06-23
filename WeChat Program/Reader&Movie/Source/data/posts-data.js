@@ -13,9 +13,9 @@ var local_database = [
         detail: "菊黄蟹正肥，品尝秋之味。徐志摩把“看初花的荻芦”和“到楼外楼吃蟹”并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，壳凸红脂块块香”；在《世说新语》里，晋毕卓更是感叹“右手持酒杯，左手持蟹螯，拍浮酒船中，便足了一生矣。”漫漫人生长路，美食与爱岂可辜负？于是作为一个吃货，突然也很想回味一下属于我的味蕾记忆。记忆中的秋蟹，是家人的味道，弥漫着浓浓的亲情。\n\n是谁来自山川湖海，却囿于昼夜，厨房与爱？ 是母亲，深思熟虑，聪明耐心。吃蟹前，总会拿出几件工具，煞有介事而乐此不疲。告诉我们螃蟹至寒，需要佐以姜茶以祛寒，在配备的米醋小碟里，亦添入姜丝与紫苏，前者驱寒后者增香。泡好菊花茶，岁月静好，我们静等。",
         postId: 0,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100003507bR0gDKBm.m4a?fromtag=38",
-            title: "夜夜夜夜-齐秦",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001TEc6V0kjpVC.jpg?max_age=2592000"
+            url: "http://dl.stream.qqmusic.qq.com/C4000021pZYn28C3e9.m4a?vkey=F22CD71DFF09FC4BB3D841A13D3E59243E4377C1D02FEBBF53415921ED121ADBE79BC13B8430790A3B49AD916F7286C18520946DFC8EA57D&guid=7276064615&uin=0&fromtag=66",
+            title: "夏末未至-胡夏",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000001qHmKU29WX7K.jpg?max_age=2592000"
         }
     },
     {
@@ -32,13 +32,12 @@ var local_database = [
         avatar: "/images/avatar/1.png",
         postId: 1,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100003GdCmG4NkEOR.m4a?fromtag=38",
-            title: "鬼迷心窍-李宗盛",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000002xOmp62kqSic.jpg?max_age=2592000"
+            url: "http://dl.stream.qqmusic.qq.com/C400002PQQsu2cHWGh.m4a?vkey=8391A966D540404084B0718BDC55EF7AF1EC146A6D99281308239350FF686C545EE4C1D2C0AE605CD2BEEE69F82ECC58FF8FBDBC3BE57729&guid=7276064615&uin=0&fromtag=66",
+            title: "Unlimited Blade works-深泽秀行",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000001f8UFJ0eIb0h.jpg?max_age=2592000"
         }
     },
     {
-        //按住alt + shift + F 可以格式化代码样式
         title: "当我们在谈论经济学时，我们在谈论什么?",
         content: "引言在我跟学生课后交流时，以及我在知乎上阅读有关“经济”问题的论题时，经常会遇到这样的情况：...",
         detail: "1 引言\n\n在我跟学生课后交流时，以及我在知乎上阅读有关“经济”问题的论题时，经常会遇到这样的情况：有些人套用“经济理论“的知识去解释现实中发生的经济事件，结果发现很多事情讲不通，或者发现”理论告诉我们的“与现实发生的是相反的。也有学生经常跟我说：经济学有什么用？为了说明这个，我经常从两个方面来进行解释，尝试用我个人所擅长的解决问题的视角和他们能够听懂的方法来说明经济学是什么，它的作用边界在哪里：\r\n\n2 ”简笔素描“与”油画肖像“我们给人画肖像画，可以用简笔素描，也可以用油画肖像。油画肖像可以在最大程度上保存了人物的各方面的细节和特点，而简笔素描则忽略了很多细节。尽管简笔素描忽略了人物的许多细节，但我们仍旧能够很容易的认出画中的人物是谁。为什么？因为这种方法保留了人物最显著的特征，以至于我们可以忽略其次要特征而对人物做出判定。\n\n2.1 ”简笔素描“对于绝大多数的非经济学专业大众而言（经济学相关专业硕士学历以上），人们所接触到的经济学都是初级微观经济学。所谓的初级微观经济学，对于经济问题的”画法“就是一种”简笔素描“。比如初级微观经济学教材中广为使用的这种一元一次需求函数：y=bx+a，需求量的唯一变量是产品价格。但仅凭直觉我们就可以断言，现实中影响需求量的因素绝不止价格这一种，因此我们可以认为这个模型对经济问题的描述是失真的。然而但这种失真却是必要的和有意义的，其意义在与它利于揭示价格对于需求的影响，而不在于否定影响需求的其他因素——",
@@ -52,9 +51,9 @@ var local_database = [
         avatar: "/images/avatar/3.png",
         postId: 2,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100004HLusI2lLjZy.m4a?fromtag=38",
-            title: "女儿情-万晓利",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004Wv5BO30pPc0.jpg?max_age=2592000"
+            url: "http://dl.stream.qqmusic.qq.com/C400002FAnJU2wkQgy.m4a?vkey=22670E1219904AB4D3331CFB271CA19F11108CAB23235310E2251805F62CD112F3220FEA17B633B93DE408837AB60F26D9FD1D1EE55DE223&guid=7276064615&uin=0&fromtag=66",
+            title: "我喜欢上你时的心理活动-陈绮贞",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M0000031abw546fHaO.jpg?max_age=2592000"
         }
     },
     {
@@ -71,9 +70,9 @@ var local_database = [
         avatar: "/images/avatar/5.png",
         postId: 3,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100002mWVx72p8Ugp.m4a?fromtag=38",
-            title: "恋恋风尘-老狼",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001VaXQX1Z1Imq.jpg?max_age=2592000",
+            url: "http://dl.stream.qqmusic.qq.com/C400000jF0b70x9gDf.m4a?vkey=AE812C9C15E07956CC8A154DA92485074E0577A7F57B4D3C9D2963110D4EFA0F739822E084500AEEB3F57380CE9F005C0E478E7C8251DB0E&guid=7276064615&uin=0&fromtag=66",
+            title: "Faded-Alan Walker",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000002Nt51E0q8Zoo.jpg?max_age=2592000",
         }
     },
     {
@@ -90,9 +89,9 @@ var local_database = [
         avatar: "../../../images/avatar/3.png",
         postId: 4,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100000Zn0vS4fKKo8.m4a?fromtag=38",
-            title: "沉默是金-张国荣",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000003at0mJ2YrR2H.jpg?max_age=2592000"
+            url: "http://dl.stream.qqmusic.qq.com/C400000FR5GV0lwW18.m4a?vkey=114952F88E03BB16C18CF7F3858071EB513DC77636698C98EA59687E5D92DFB7E7206A09C317277C0F20EDB52FF4F4244A9E0F426B6AC603&guid=7276064615&uin=0&fromtag=66",
+            title: "成都-赵雷",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000000jE4g74VS43p.jpg?max_age=2592000"
         }
     },
     {
@@ -109,9 +108,9 @@ var local_database = [
         avatar: "../../../images/avatar/5.png",
         postId: 5,
         music: {
-            url: "http://ws.stream.qqmusic.qq.com/C100002I8eGJ28BI17.m4a?fromtag=38",
-            title: "朋友-谭咏麟",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004eGsCN3SUheO.jpg?max_age=2592000"
+            url: "http://dl.stream.qqmusic.qq.com/C400004TEo4m1cwCtf.m4a?vkey=1DA459D037D817DC3660A034037924C12341757DB157E508D5154E0F13B59A2EC5B9778EB02BD69EC34FD1D8E1723A10F4F60231740E87EC&guid=7276064615&uin=0&fromtag=66",
+            title: "桃花诺-G.E.M. 邓紫棋",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000004avLEH3iQD8X.jpg?max_age=2592000"
         }
     },
 ]

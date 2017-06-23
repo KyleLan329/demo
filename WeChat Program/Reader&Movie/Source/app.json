@@ -5,7 +5,8 @@
         "pages/posts/post-detail/post-detail",
         "pages/movies/movies",
         "pages/movies/more-movies/more-movies",
-        "pages/movies/movie-detail/movie-detail"
+        "pages/movies/movie-detail/movie-detail",
+        "pages/weather/weather"
     ],
     "window": {
         "navigationBarBackgroundColor": "#405f80"
@@ -24,6 +25,12 @@
                 "text": "电影",
                 "iconPath": "images/tab/dianying.png",
                 "selectedIconPath": "images/tab/dianying_hl.png"
+            },
+            {
+                "pagePath": "pages/weather/weather",
+                "text": "天气",
+                "iconPath": "images/tab/weather.png",
+                "selectedIconPath": "images/tab/weather_hl.png"
             }
         ]
     }

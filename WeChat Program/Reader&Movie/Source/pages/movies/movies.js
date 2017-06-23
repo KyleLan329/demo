@@ -47,7 +47,8 @@ Page({
         this.setData({
             containerShow: true,
             searchPanelShow: false,
-            searchResult: {}
+            searchResult: {},
+            isSearchEmpty: true
         })
     },
     onBindFocus: function (event) {
@@ -117,6 +118,23 @@ Page({
                 }
                 movies.push(temp);
             }
+
+            var movies = [];
+            for (var idx in moviesDouban.subjects) {
+                var subject = moviesDouban.subjects[idx];
+                var title = subject.title;
+                if (title.length >= 6) {
+                    title = title.substring(0, 6) + "...";
+                }
+                var temp = {
+                    stars: stars_score.convertToStarsArray(subject.rating.stars),
+                    title: title,
+                    average: subject.rating.average,
+                    coverageUrl: subject.images.large,
+                    movieId: subject.id
+                }
+                movies.push(temp);
+            }
             var totalMovies = {};
             if (!this.data.isSearchEmpty) {
                 totalMovies = this.data.searchResult.movies.concat(movies);
@@ -132,6 +150,7 @@ Page({
             this.setData(readyData);
             this.data.totalCount += 20;
             wx.hideNavigationBarLoading();
+
         }
 
     },

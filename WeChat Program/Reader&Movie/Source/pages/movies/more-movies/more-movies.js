@@ -36,12 +36,12 @@ Page({
         this.data.requestUrl = dataUrl;
         common.http(dataUrl, this.processDoubanData);
     },
-    onReachBottom: function () {
+    onReachBottom: function (event) {
         var nextUrl = this.data.requestUrl + "?start=" + this.data.totalCount + "&count = 20";
         common.http(nextUrl, this.processDoubanData);
         wx.showNavigationBarLoading();
     },
-    onPullDownRefresh: function(){
+    onPullDownRefresh: function (event){
         var refreshUrl = this.data.requestUrl + "?start=0&count = 20";
         this.data.movies = {};
         this.data.isEmpty = true;
@@ -49,6 +49,7 @@ Page({
         wx.showNavigationBarLoading();
     },
     processDoubanData: function (moviesDouban) {
+        console.log("totalMovies: " + this.data.totalCount );
         var movies = [];
         for (var idx in moviesDouban.subjects) {
             var subject = moviesDouban.subjects[idx];
@@ -64,6 +65,7 @@ Page({
                 movieId: subject.id
             }
             movies.push(temp);
+            console.log(movies);
         }
         // 判断是否需要叠加获取到的电影数据
         var totalMovies = {};
